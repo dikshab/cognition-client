@@ -1,10 +1,19 @@
 var cognitionControllers = angular.module('cognitionControllers', []);
 
 cognitionControllers.controller('homeController', ['$scope', '$http', function($scope, $http){
+	$scope.onSearch = function(){
+		var target = $scope.searchTerm;
 
-	/* ALL CODE GOES IN THE GET METHOD FOR ASYNC TO WORK*/
-	$http.get("https://api.github.com/users/dabockster")
-		.success(function(res){
-			
-		});
+		window.location = "/#/search/" + target;
+		window.location.reload();
+	}
+
+	$scope.onUpload = function(){
+		//jQuery Stuff - DONT DO THIS IN PRODUCTION (BAD!!!)
+		$scope.selectedFile = $('input[type="file"]').click();
+	};
+}]);
+
+cognitionControllers.controller('searchController', ['$scope', '$http', function($scope, $http){
+
 }]);

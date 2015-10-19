@@ -6,15 +6,11 @@
       <br>
     </div>
     <p class="HeaderInput">
-      <input type="text" class="form-control" placeholder="Enter tag">
+      <input type="text" ng-model="searchTerm" class="form-control" placeholder="Enter tag">
       <br>
-      <a class="btn btn-primary btn-lg" id="HeaderBtn">Search</a>
-      <a class="btn btn-primary btn-lg" id="HeaderBtn">Upload</a>
+      <button ng-click="onSearch()" class="btn btn-primary btn-lg" id="HeaderBtn">Search</buton>
+      <button ng-click="onUpload()" class="btn btn-primary btn-lg" id="HeaderBtn">Upload</button>
+      <input type="file" id="exampleInput" style="display: none" />
     </p>
-  </div>
-</div>
-<div class="HomeBody">
-  <div class="container">
-    App description. 
   </div>
 </div>

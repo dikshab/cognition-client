@@ -7,8 +7,9 @@ app.config(['$routeProvider',
 				templateUrl: "pages/home.html",
 				controller: "homeController"
 			})
-			.when('/404',{
-				templateUrl:"pages/404.html",
-				controller: "404Controller"
+			.when('/search/:searchParam',{
+				templateUrl:"pages/search.html",
+				controller: "searchController"
 	});
 }]);
+

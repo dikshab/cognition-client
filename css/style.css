@@ -1,3 +1,12 @@
+html, body{
+	height: 100%;
+	background-color: #EF4997; 
+}
+
+#notes{
+	padding:20px;
+}
+
 .Header {
   text-align: center; 
   color: white;
@@ -15,10 +24,15 @@
 
 .HeaderInput {
   text-align: center;
+  padding: 20px;
 }
 
 .jumbotron {
-  background-color: #EF4997; 
+	background-color: #EF4997; 
+  	background-size: 100%;
+  	width: 100%;
+  	height: 100%; /* For at least Firefox */
+  	min-height: 100%;
 }
 
 .HomeBody {
